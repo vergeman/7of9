@@ -16,13 +16,16 @@ border: 0;
 z-index: 10;
 }
 .carousel .item {
-height: 760px;
+//height: 768px;
+
 }
 .carousel img {
 position: absolute;
+margin: 0 auto;
 top: 0;
 left: 0;
 min-width: 100%;
+
 }
 
 .carousel-caption {
@@ -32,7 +35,7 @@ max-width: 350px;
 padding: 20px;
 margin-top: 500px;
 }
-.carousel-caption h1,
+*.carousel-caption h1,
 .carousel-caption .lead {
 margin: 0;
 line-height: 1.25;

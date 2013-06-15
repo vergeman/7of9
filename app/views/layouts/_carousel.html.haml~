@@ -1,0 +1,9 @@
+#mycarousel.carousel.slide
+  .carousel-inner
+    .active.item
+      = image_tag("dog1.jpg")
+    .item
+      = image_tag("dog2.jpg")
+    .item
+  %a{:class => "left carousel-control", :href =>"#mycarousel", :"data-slide"=>"prev"} <
+  %a{:class => "right carousel-control", :href =>"#mycarousel", :"data-slide"=>"next"} >

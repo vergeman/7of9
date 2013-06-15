@@ -1,0 +1,24 @@
+%ul{:class => "nav"}
+  %li
+    = link_to "7 OF 9", root_path, :class => 'brand'
+  %li{:class => "nav-margin dropdown"}
+    %a{:href=>"#", :class=>"dropdown-toggle", :"data-toggle"=>"dropdown"}
+      Fostering
+      %b{:class=>"caret"}
+    %ul{:class=>"dropdown-menu"}
+      %li
+        %a{:href => "#"}
+          Hello
+      %li
+        %a{:href => "#"}
+          Dog life
+
+  %li
+    %a{:href => "#"}
+      Find A Dog
+  %li
+    %a{:href => "#"}
+      Shop
+  %li
+    %a{:href => "#"}
+      Report Animal Abuse

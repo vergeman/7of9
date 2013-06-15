@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: hotintheoffice_dev
+  database: 7of9_dev
   pool: 5
   timeout: 5000
   username: alan
@@ -11,7 +11,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: hotintheoffice_test
+  database: 7of9_test
   pool: 5
   timeout: 5000
   username: alan

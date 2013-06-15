@@ -3,13 +3,17 @@
 -------------------------------------------------- */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-position: absolute;
+position: fixed;
 top: 0;
 left: 0;
 right: 0;
 z-index: 10;
-margin-top: 20px;
-margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+width: 100%;
+.container {
+    width: 100%;
+}
+//margin-top: 20px;
+//margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
 }
 .navbar-wrapper .navbar {
 }
@@ -35,32 +39,3 @@ padding: 15px 20px;
 .navbar .btn-navbar {
 margin-top: 10px;
 }
-
-
-/*
-
-.navbar-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    margin-top: 20px;
-    margin-bottom: -90px;
-
-    .container {
-	width: 940px;
-
-    }
-}
-
-.nav-margin {
-    margin-left: 20px;
-}
-.navbar-inner {
-    min-height: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-    
-}
-*/

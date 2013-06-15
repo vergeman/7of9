@@ -16,12 +16,7 @@
           .navbar-inner
             = render 'layouts/navigation'
     #main{:role => "main"}
-      = render 'layouts/carousel'
-      .container.marketing
-        .content
-          .row
-            .span12
-              = render 'layouts/messages'
-              = yield
+      = render 'layouts/messages'
+      = yield
     = javascript_include_tag "application"            
     %footer

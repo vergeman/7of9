@@ -7,13 +7,6 @@ $('.carousel').carousel();
 $('.humana').imagesLoaded( () ->
 $('.humana').masonry({
     itemSelector : '.product',
-    columnWidth : 100;
-    isAnimated: true; 
-    animationOptions: {
-    duration: 700,
-    easing: 'linear',
-    queue: false
-    }
 });
 )
 

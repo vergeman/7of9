@@ -4,7 +4,7 @@
 
 $('.carousel').carousel();
 
+$('.product').click( () -> {
 
-
-$('.product').click( () -> $('#myModal').modal('toggle'); $('.current_price').html( $(this).children('.price').html() ));
-
+    alert('hi');
+});

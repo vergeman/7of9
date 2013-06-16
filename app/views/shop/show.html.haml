@@ -1,3 +1,28 @@
 = render 'carousel'
 .container.marketing.storefront
   = render 'store'
+
+#myModal.modal.hide.fade{:tabindex=>"-1", :role=>"dialog", :"aria-labelledby"=>"myModalLabel", :"aria-hidden"=>"true"}
+  .modal-header
+    %button{:type=>"button",:class=>"close", :"data-dismiss"=>"modal", :"aria-hidden"=>"true"}
+      x
+    %h3
+      #myModalLabel
+        Donation Pricing
+  .modal-body
+    .row
+      .span2.current_price_label
+        Current Price:
+      .span2.current_price
+    %br
+    .row
+      .span2.added_donation
+        Added Donation:
+      .span2
+        %input{:type=>"text"}
+  .modal-footer
+    %button{:class=>"btn", :"data-dismiss"=>"modal", :"aria-hidden"=>"true"}
+      Cancel
+    %button{:class=>"btn btn-primary", :"data-dismiss"=>"modal"}
+      Thanks
+

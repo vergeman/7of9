@@ -4,17 +4,19 @@
       = image_tag("main/dog1.jpg")
       .container
         .carousel-caption.caption-bottom-left
-          %h1 7 of 9
-          %p{:class => "lead"}
-            Dogs rule cats drool.
-          
+          .carousel-logo
+          %h1
+            = link_to("Helping Dogs Help You", "/shop", :class=>"head_link")
+
+        
     .item
       = image_tag("main/dog2.jpg")
       .container
         .carousel-caption.caption-bottom-left
-          %h1 7 of 9
-          %p{:class => "lead"}
-            We so Cute
+          .carousel-logo
+          %h1
+            = link_to("Helping Dogs Help You", "/shop", :class=>"head_link")
+
 
   %a{:class => "left carousel-control", :href =>"#mycarousel", :"data-slide"=>"prev"} <
   %a{:class => "right carousel-control", :href =>"#mycarousel", :"data-slide"=>"next"} >

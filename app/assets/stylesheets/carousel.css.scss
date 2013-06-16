@@ -1,3 +1,20 @@
+.carousel-logo {
+    width: 150px;
+    height:150px;
+    background-image: url('/assets/logo150.jpg');
+    margin-bottom: 20px;    
+}
+
+h1 {
+    .head_link {
+	color:#fff;
+    }
+    a:hover {
+	text-decoration: none;
+	color: lighten(#0088CC, 10%);
+    }
+}
+
  /* Carousel base class */
 .carousel {
 margin-bottom: 60px;
@@ -29,13 +46,14 @@ min-width: 100%;
 }
 
 .carousel-caption {
-    //background-color: transparent;
+    background-color: transparent;
     position: static;
-    max-width: 200px;
+    max-width: 300px;
 }
 .caption-bottom-left {
     padding: 20px;
-    margin-top: 500px;
+    margin-top: 350px;
+    margin-left: 40px;
 }
 .caption-product-detail {
     position:static;

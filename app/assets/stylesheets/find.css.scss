@@ -2,6 +2,24 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.buy-in {
+    float: right;
+    h4 {
+
+	margin: 0;
+    }
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    min-width: 120px;
+    a:hover { 
+	color:lighten(#0088CC, 10%);
+	cursor: pointer;
+	text-decoration: none;
+    }
+
+}
+
 /* FILTERS */
 
 ul {

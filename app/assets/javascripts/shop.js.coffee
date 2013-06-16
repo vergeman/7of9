@@ -4,10 +4,3 @@
 
 $('.carousel').carousel();
 
-$('.humana').imagesLoaded( () ->
-$('.humana').masonry({
-    itemSelector : '.product',
-});
-)
-
-$('.humana').masonry(reload: true);

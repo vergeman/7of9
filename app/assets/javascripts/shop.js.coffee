@@ -17,4 +17,4 @@ $('.humana').masonry({
 });
 )
 
-
+$('.humana').masonry(reload: true);

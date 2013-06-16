@@ -7,7 +7,7 @@
 }
 
 #store {
-    //height: 760px;
+//    height: 760px;
 margin: 40px;
 
     .header {
@@ -46,16 +46,16 @@ a.product-menu-head {
 
 }
 .product-menu {
-    //background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
-//    color: #fff;
-z-index:5;
-color:black;
-font-size: 14px;
+    z-index:11;
+    color:black;
+    font-size: 14px;
     left: 10%;
     max-width: 200px;
     padding: 10px;
     position: absolute;
     top: 20%;
+    //background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+//    color: #fff;
 
 }
 .product-tag {
@@ -65,6 +65,6 @@ font-size: 14px;
 }
 
 .btn-shop {
-
+    margin-top: 20px;
     float:right;
 }

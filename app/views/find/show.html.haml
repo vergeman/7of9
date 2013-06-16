@@ -9,24 +9,24 @@
             %ul{:class=>"size"}
               %li
                 %label.checkbox
-                  %input{:name=> "0-10kg", :type => "checkbox", :value=>"0"}
+                  %input{:name=> "#{@size[0]}", :type => "checkbox", :value=>"#{@size[0]}"}
                   %span{:class => ""}
-                    &nbsp; 0 - 10 kg
+                    &nbsp; #{@size[0]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"1"}
+                  %input{:name => "#{@size[1]}", :type => "checkbox", :value=>"#{@size[1]}"}
                   %span{:class => ""}
-                    10 - 20 kg
+                    #{@size[1]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"2"}
+                  %input{:name=>"#{@size[2]}", :type => "checkbox", :value=>"#{@size[2]}"}
                   %span{:class => ""}
-                    20 - 30 kg
+                    #{@size[2]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"3"}
+                  %input{:name => "#{@size[3]}", :type => "checkbox", :value=>"#{@size[3]}"}
                   %span{:class => ""}
-                    30+ kg
+                    #{@size[3]}
         .panel
           .panel-header
             %h4 Personality
@@ -34,24 +34,24 @@
             %ul{:class=>"personality"}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"0"}
+                  %input{:name=>"#{@personality[0]}", :type => "checkbox", :value=>"#{@personality[0]}"}
                   %span{:class => ""}
-                    Docile
+                    #{@personality[0]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"1"}
+                  %input{:name=>"#{@personality[1]}", :type => "checkbox", :value=>"#{@personality[1]}"}
                   %span{:class => ""}
-                    Friendly
+                    #{@personality[1]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"2"}
+                  %input{:name => "#{@personality[2]}", :type => "checkbox", :value=>"#{@personality[2]}"}
                   %span{:class => ""}
-                    Energetic
+                    #{@personality[2]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"3"}
+                  %input{:name => "#{@personality[3]}", :type => "checkbox", :value=>"#{@personality[3]}"}
                   %span{:class => ""}
-                    Timid
+                    #{@personality[3]}
         .panel
           .panel-header
             %h4 Age
@@ -59,24 +59,24 @@
             %ul{:class=>"age"}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"0"}
+                  %input{:name => "#{@age[0]}", :type => "checkbox", :value=>"#{@age[0]}"}
                   %span{:class => ""}
-                    Puppy
+                    #{@age[0]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"1"}
+                  %input{:name => "#{@age[1]}", :type => "checkbox", :value=>"#{@age[1]}"}
                   %span{:class => ""}
-                    Adolescent
+                    #{@age[1]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"2"}
+                  %input{:name=>"#{@age[2]}", :type => "checkbox", :value=>"#{@age[2]}"}
                   %span{:class => ""}
-                    Adult
+                    #{@age[2]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"3"}
+                  %input{:name=>"#{@age[3]}", :type => "checkbox", :value=>"#{@age[3]}"}
                   %span{:class => ""}
-                    Senior
+                    #{@age[3]}
         .panel
           .panel-header
             %h4 Appearance
@@ -84,32 +84,39 @@
             %ul{:class=>"apperance"}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"0"}
+                  %input{:name=>"#{@appearance[0]}", :type => "checkbox", :value=>"#{@appearance[0]}"}
                   %span{:class => ""}
-                    Long-haired
+                    #{@appearance[0]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"1"}
+                  %input{:name=>"#{@appearance[1]}", :type => "checkbox", :value=>"#{@appearance[1]}"}
                   %span{:class => ""}
-                    Short-haired
+                    #{@appearance[1]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"2"}
+                  %input{:name => "#{@appearance[2]}", :type => "checkbox", :value=>"#{@appearance[2]}"}
                   %span{:class => ""}
-                    Curly
+                    #{@appearance[2]}
               %li
                 %label.checkbox
-                  %input{:type => "checkbox", :value=>"3"}
+                  %input{:name=>"#{@appearance[3]}", :type => "checkbox", :value=>"#{@appearance[3]}"}
                   %span{:class => ""}
-                    Hairless
-        
+                    #{@appearance[3]}
+
       .results.span9
         .header
-          %h5 Find a new friend today
-        = render :partial => 'dog', :locals => {:name => "Sladak", :image => "sladak.jpg", :tagline => "I'm cute. I know it. You know it. Foster me so I can play fetch!"}
-        = render :partial => 'dog', :locals => {:name => "Zagorec Tito", :image => "zagorec.jpg", :tagline => "I'm a shy puppy, but I have so much love to give!"}
-        = render :partial => 'dog', :locals => {:name => "Mini Klingona", :image => "klingona.jpg", :tagline => "I love to run around, eat grass, and poop. Fun!"}
-        = render :partial => 'dog', :locals => {:name => "Cupavac", :image => "cupavac.jpg", :tagline => "My shaggy hair is perfect for snuggling."}
-        = render :partial => 'dog', :locals => {:name => "Petra", :image => "petra.jpg", :tagline => "I'm cute, lovable, and ready to play!"}
-        = render :partial => 'dog', :locals => {:name => "Majka", :image => "majka.jpg", :tagline => "A caring mother, I will nuture your heart"}
-        = render :partial => 'dog', :locals => {:name => "Pupi", :image => "pupi.jpg", :tagline => "I am the cutest puppy in the world! Foster me now!"}
+          %h5 Find a new friend today!
+        
+        = render :partial => 'dog', :locals => {:name => "Sladak", :image => "sladak.jpg", :tagline => "I'm cute. I know it. You know it. Foster me so I can play fetch!", :size => "#{@sladak[0]}", :personality => "#{@sladak[1]}", :age => "#{@sladak[2]}", :appearance => "#{@sladak[3]}"}
+
+        = render :partial => 'dog', :locals => {:name => "Zagorec Tito", :image => "zagorec.jpg", :tagline => "I'm a shy puppy, but I have so much love to give!", :size => "#{@zagorec[0]}", :personality => "#{@zagorec[1]}", :age => "#{@zagorec[2]}", :appearance => "#{@zagorec[3]}"}
+
+        = render :partial => 'dog', :locals => {:name => "Mini Klingona", :image => "klingona.jpg", :tagline => "I love to run around, eat grass, and poop. Fun!", :size => "#{@klingona[0]}", :personality => "#{@klingona[1]}", :age => "#{@klingona[2]}", :appearance => "#{@klingona[3]}"}
+
+        = render :partial => 'dog', :locals => {:name => "Cupavac", :image => "cupavac.jpg", :tagline => "My shaggy hair is perfect for snuggling.", :size => "#{@cupavac[0]}", :personality => "#{@cupavac[1]}", :age => "#{@cupavac[2]}", :appearance => "#{@cupavac[3]}"}
+
+        = render :partial => 'dog', :locals => {:name => "Petra", :image => "petra.jpg", :tagline => "I'm awesome, and if I were to launch a startup it'd be 7 of 9!", :size => "#{@petra[0]}", :personality => "#{@petra[1]}", :age => "#{@petra[2]}", :appearance => "#{@petra[3]}"}
+
+        = render :partial => 'dog', :locals => {:name => "Majka", :image => "majka.jpg", :tagline => "A caring mother, I will nuture your heart", :size => "#{@majka[0]}", :personality => "#{@majka[1]}", :age => "#{@majka[2]}", :appearance => "#{@majka[3]}"}
+
+        = render :partial => 'dog', :locals => {:name => "Pupi", :image => "pupi.jpg", :tagline => "I am the cutest puppy in the world! Foster me now!", :size => "#{@pupi[0]}", :personality => "#{@pupi[1]}", :age => "#{@pupi[2]}", :appearance => "#{@pupi[3]}"}

@@ -1,0 +1,115 @@
+.container.marketing
+  #find.featurette
+    %row
+      .filters.span2
+        .panel
+          .panel-header
+            %h4 Size
+          .panel-attributes
+            %ul{:class=>"size"}
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"0"}
+                  %span{:class => ""}
+                    &nbsp; 0 - 10 kg
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"1"}
+                  %span{:class => ""}
+                    10 - 20 kg
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"2"}
+                  %span{:class => ""}
+                    20 - 30 kg
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"3"}
+                  %span{:class => ""}
+                    30+ kg
+        .panel
+          .panel-header
+            %h4 Personality
+          .panel-attributes
+            %ul{:class=>"personality"}
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"0"}
+                  %span{:class => ""}
+                    Docile
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"1"}
+                  %span{:class => ""}
+                    Friendly
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"2"}
+                  %span{:class => ""}
+                    Energetic
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"3"}
+                  %span{:class => ""}
+                    Timid
+        .panel
+          .panel-header
+            %h4 Age
+          .panel-attributes
+            %ul{:class=>"age"}
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"0"}
+                  %span{:class => ""}
+                    Puppy
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"1"}
+                  %span{:class => ""}
+                    Adolescent
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"2"}
+                  %span{:class => ""}
+                    Adult
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"3"}
+                  %span{:class => ""}
+                    Senior
+        .panel
+          .panel-header
+            %h4 Appearance
+          .panel-attributes
+            %ul{:class=>"apperance"}
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"0"}
+                  %span{:class => ""}
+                    Long-haired
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"1"}
+                  %span{:class => ""}
+                    Short-haired
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"2"}
+                  %span{:class => ""}
+                    Curly
+              %li
+                %label.checkbox
+                  %input{:type => "checkbox", :value=>"3"}
+                  %span{:class => ""}
+                    Hairless
+        
+      .results.span9
+        .header
+          %h5 Browse and Search Dogs
+        = render :partial => 'dog', :locals => {:name => "Sladak", :image => "sladak.jpg", :tagline => "I'm cute. I know it. You know it. Foster me so I can play fetch!"}
+        = render :partial => 'dog', :locals => {:name => "Zagorec Tito", :image => "zagorec.jpg", :tagline => "I'm a shy puppy, but I have so much love to give!"}
+        = render :partial => 'dog', :locals => {:name => "Mini Klingona", :image => "klingona.jpg", :tagline => "I love to run around, eat grass, and poop. Fun!"}
+        = render :partial => 'dog', :locals => {:name => "Cupavac", :image => "cupavac.jpg", :tagline => "My shaggy hair is perfect for snuggling."}
+        = render :partial => 'dog', :locals => {:name => "Petra", :image => "petra.jpg", :tagline => "I'm cute, lovable, and ready to play!"}
+        = render :partial => 'dog', :locals => {:name => "Majka", :image => "majka.jpg", :tagline => "A caring mother, I will nuture your heart"}
+        = render :partial => 'dog', :locals => {:name => "Pupi", :image => "pupi.jpg", :tagline => "I am the cutest puppy in the world! Foster me now!"}

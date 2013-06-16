@@ -1,7 +1,10 @@
 Fosterdog::Application.routes.draw do
+  get "find/show"
+
   root :to => 'Main#show'
 
   match '/shop' => 'Shop#show'
+  match '/find' => 'Find#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

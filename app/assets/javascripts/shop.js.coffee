@@ -4,8 +4,7 @@
 
 $('.carousel').carousel();
 
-
-$('window').load(foo = () ->
+$('.humana').imagesLoaded( () ->
 $('.humana').masonry({
     itemSelector : '.product',
     columnWidth : 100;

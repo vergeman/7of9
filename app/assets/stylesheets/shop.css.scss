@@ -1,3 +1,70 @@
 // Place all the styles related to the shop controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.storefront {
+    background: #e1e1e1;
+}
+
+#store {
+    //height: 760px;
+margin: 40px;
+
+    .header {
+	margin-top : -40px;
+    }
+}
+
+.humana {
+    margin-left: 60px;
+}
+.product {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+    padding: 10px;
+    background: #fff;
+
+    .item {
+	font-size: 12px;
+	padding-top: 10px;
+    }
+    .price {
+	margin-top: -31px;
+	float: right;
+    }
+}
+
+a.product-menu-head {
+    &:hover   {color: #0088CC; text-decoration: none;}
+    &:visited {color: #0088CC; text-decoration: none;}
+    &:active{color: #0088CC; text-decoration: none;}
+    &:link{color: #0088CC; text-decoration: none;}
+
+}
+.product-menu {
+    //background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+//    color: #fff;
+z-index:5;
+color:black;
+font-size: 14px;
+    left: 10%;
+    max-width: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+
+}
+.product-tag {
+    line-height: 1.2;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn-shop {
+
+    float:right;
+}

@@ -29,12 +29,23 @@ min-width: 100%;
 }
 
 .carousel-caption {
-//background-color: transparent;
-position: static;
-max-width: 350px;
-padding: 20px;
-margin-top: 500px;
+    //background-color: transparent;
+    position: static;
+    max-width: 200px;
 }
+.caption-bottom-left {
+    padding: 20px;
+    margin-top: 500px;
+}
+.caption-product-detail {
+    position:static;
+    padding: 10px;
+    margin-top: 50%;
+    margin-left: 75%;
+}
+
+
+
 *.carousel-caption h1,
 .carousel-caption .lead {
 margin: 0;

@@ -1,20 +1,28 @@
+.product-menu
+  %a{:href => "#store", :class=>"product-menu-head"}
+    = image_tag("shop/humana.png")
+  
+  %h4{:class=>"product-tag"}
+    -# Shop with our valued partner
+
+  %a{:href => "#store", :class => 'btn btn-primary btn-large btn-shop'}
+    Shop!
 #mycarousel.carousel.slide
   .carousel-inner
-    .active.item
+    .active.item    
       = image_tag("shop/product1.jpg")
       .container
-        .carousel-caption
-          %h1 7 of 9
-          %p{:class => "lead"}
-            Dogs rule cats drool.
-          
+        .carousel-caption.caption-product-detail
+          %p Striped Dog Collar, $34.99
+        
     .item
       = image_tag("shop/product2.jpg")
       .container
-        .carousel-caption
-          %h1 7 of 9
-          %p{:class => "lead"}
-            We so Cute
+        .carousel-caption.caption-product-detail
+          %p Velvet Dog Leash, $29.99
 
   %a{:class => "left carousel-control", :href =>"#mycarousel", :"data-slide"=>"prev"} <
   %a{:class => "right carousel-control", :href =>"#mycarousel", :"data-slide"=>"next"} >
+
+
+  

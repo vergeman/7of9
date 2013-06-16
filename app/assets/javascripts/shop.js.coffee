@@ -5,7 +5,7 @@
 $('.carousel').carousel();
 
 
-
+$('window').load(foo = () ->
 $('.humana').masonry({
     itemSelector : '.product',
     columnWidth : 100;
@@ -16,6 +16,6 @@ $('.humana').masonry({
     queue: false
     }
 });
-
+)
 
 
